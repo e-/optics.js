@@ -14,12 +14,11 @@ optics.js is an open source JavaScript library which implements OPTICS clusterin
 
 Class `Point` contains the result of OPTICS clustering for one element of `data`
 
-* `point.datum`
-* `point.isProcessed`
-* `point.coreDistance`
-* `point.reachability`
-* `point.index`
+* `point.datum` 
+* `point.isProcessed` 
+* `point.coreDistance` 
+* `point.reachability` 
+* `point.index` 
    
- ## LICENSE
- 
- &copy; 2014, Jaemin Jo. Released under BSD license.
+## LICENSE
+&copy; 2014, Jaemin Jo. Released under BSD license.

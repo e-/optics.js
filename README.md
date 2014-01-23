@@ -3,6 +3,9 @@
 optics.js is an open source JavaScript library which implements OPTICS clustering algorithm for *browsers* and *node.js*. For more detailed information about OPTICS clustering algorithm , refer to the below paper.
 > Ankerst, Mihael, et al. "OPTICS: ordering points to identify the clustering structure." ACM SIGMOD Record 28.2 (1999): 49-60.
 
+## Demo
+[Demo](http://e-.github.io/optics.js/demo/)
+
 ## Usage
 `optics(data, minPts, epsilon, getter, dist)` returns an array of class `Point`.
   

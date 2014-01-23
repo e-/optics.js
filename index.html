@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Optics.js by e-</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Optics.js</h1>
+        <p>JavaScript implementation for OPTICS density-based clustering algorithm.</p>
+
+        <p class="view"><a href="https://github.com/e-/optics.js">View the Project on GitHub <small>e-/optics.js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/e-/optics.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/e-/optics.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/e-/optics.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="opticsjs" class="anchor" href="#opticsjs"><span class="octicon octicon-link"></span></a>optics.js</h1>
+
+<p>optics.js is an open source JavaScript library which implements OPTICS clustering algorithm for <em>browsers</em> and <em>node.js</em>. For more detailed information about OPTICS clustering algorithm , refer to the below paper.</p>
+
+<blockquote>
+<p>Ankerst, Mihael, et al. "OPTICS: ordering points to identify the clustering structure." ACM SIGMOD Record 28.2 (1999): 49-60.</p>
+</blockquote>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p><code>optics(data, minPts, epsilon, getter, dist)</code> returns an array of class <code>Point</code>.</p>
+
+<ul>
+<li>
+<code>data</code>: An array of data to be clustered.</li>
+<li>
+<code>minPts</code>: Defined in the forementioned paper.</li>
+<li>
+<code>epsilon</code> Defined in the forementioned paper.</li>
+<li>
+<code>getter</code>: <em>Optional.</em> If <code>data</code> contains other data structures (e.g. Object) rather than vectors (an array of numbers), you should specify how to get a vector from each element of <code>data</code>. The default value is an identity function (e.g. <code>function(d){return d;}</code>) which means each element of <code>data</code> is used as a vector.</li>
+<li>
+<code>dist</code>: <em>Optional.</em> A distance function which computes the distance between two vectors. If not specified, the Euclidan distance function is used.</li>
+</ul><p>Class <code>Point</code> contains the result of OPTICS clustering for one element of <code>data</code></p>
+
+<ul>
+<li>
+<code>point.datum</code> </li>
+<li>
+<code>point.isProcessed</code> </li>
+<li>
+<code>point.coreDistance</code> </li>
+<li>
+<code>point.reachability</code> </li>
+<li>
+<code>point.index</code> </li>
+</ul><h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>LICENSE</h2>
+
+<p>© 2014, Jaemin Jo. Released under BSD license.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/e-">e-</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
